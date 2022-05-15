@@ -1,0 +1,77 @@
+
+.grid-item{
+    background-color:pink ;
+    font-size:1.5rem;
+    border:2px solid purple;
+    padding: 20px;
+    color:blue;
+}
+
+.grid-item:nth-child(odd) {
+background-color: aqua;
+
+}
+.grid-container{
+
+    display:grid;
+    grid-template-columns: 150px 300px;
+    grid-auto-rows: 150px;
+    /* grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr ; */
+    /* grid-template-columns: 25% 50% 25%; bu bölümdeki 3 sekilde olur. */
+    /* grid-template-columns: repeat(4,200px); grid-template-columns: 200px 200px 200px 200px */
+    /* grid-template-rows:100px 200px 100px; */
+    
+    /* grid-auto-rows:minmax(300px,auto); */
+    grid-gap:15px;
+    /* grid-template-areas:
+    "header header"
+    "sidebar content1"
+    "sidebar content2"
+    "sidebar content3" */
+    /* justify-content:center; body icinde yaptigimiz calismayi ortalar. */
+    /* justify-content:space-around;esit mesafelerde bölümler arasinda mesafeler olusturur. */
+    /* justify-content:space-between;bölümler arasini ortadan acar.sagda ve solda bosluk kalmaz. */
+    justify-content:space-evenly;/*basta ortada ve sonda her yerde esit bosluklar olusuturur.*/
+    justify-content:start; /*sola yasliyor. end denilirse de saga yasliyor.*/
+    /* align-items:center;gridin ortasini alir sadece. mesela sadece yazili bölümü. */
+
+
+}
+.grid-item-1 {
+    /* grid-column-start:1;
+    grid-column-end:3; */
+    /* grid-area: header; */
+
+}
+.grid-item-2{
+    /* grid-area:sidebar; */
+    /* grid-row-start:2;
+    grid-row-end: 4;  */
+    /* grid-row:2/4; */
+    /* grid-area:row-start/column-start/ row-end/ column-end; */
+    /* grid-area:2/1/4/3;tuhaf karisik bu türü.  */
+    /* grid-area:2/1/span 2/span 2diger bir yazilim sekli */
+}
+
+.grid-item-3{
+    /* grid-area:content2; */
+    /* grid-row:span 2; */
+    
+}
+
+.grid-item-4{
+     /* grid-area:content1; */
+     /* grid-column: span 2; */
+     /* grid-area:4/2/6/3; bir diger yazilisi: */
+
+    }  
+
+.grid-item-5{
+
+    /* grid-column: span 2; */
+}
+
+.grid-item-6{
+    /* grid-column:span 2; */
+}
